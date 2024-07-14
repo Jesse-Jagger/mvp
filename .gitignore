@@ -6,3 +6,8 @@ __pycache__
 *.pyc
 *cfg
 Locate_Me
+Mysql_Locate_Me.session.sql
+Include
+myenv
+Lib
+Scripts
