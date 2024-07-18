@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/images/pexels-photo.jpg") no-repeat center center;
+    background: url("/static/images/pexels-photo.jpg") no-repeat center center;
     background-size: center; /* Make sure the image covers the entire container */
     background-position: center;
     animation: slide-up 0.8s ease-out;

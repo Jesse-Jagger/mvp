@@ -4,6 +4,9 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_migrate import Migrate
 from dotenv import load_dotenv
+from cli import list_routes
+from app.api import api  # Import the api blueprint
+
 import os
 
 # Load environment variables from .env file
@@ -27,5 +30,9 @@ def create_app():
 
     from app.routes import main
     app.register_blueprint(main)
+
+    # Register custom CLI command
+    app.cli.add_command(list_routes)
+    app.register_blueprint(api)  # Register the API blueprint
 
     return app
