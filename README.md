@@ -50,7 +50,7 @@ Advanced features like route planning and navigation
 
 Contributors
 Jesse Jackson Sefa Manu jessejackson.055@gmail.com
-linkdin - https://www.linkedin.com/in/jesse-jackson
+linkdin - https://www.linkedin.com/in/jesse-jackson-068018279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 phone number - 0558692545
 
 License
