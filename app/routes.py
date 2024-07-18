@@ -23,7 +23,7 @@ def register():
             form = RegistrationForm(data=data, meta={'csrf': False})  # Disable CSRF for JSON requests
             if form.validate():
                 hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-                user = User(username=form.username.data, email=form.email.data, password=hashed_password)
+                user = User(first_name=form.username.data, other_names=form.other_name.data, last_name=form.last_name.data, username=form.username.data, email=form.email.data, phone_number=form.phone_number.data, password=hashed_password)
                 db.session.add(user)
                 db.session.commit()
                 return jsonify(message='Your account has been created! You can now log in'), 201
@@ -32,7 +32,7 @@ def register():
             form = RegistrationForm()
             if form.validate_on_submit():
                 hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-                user = User(username=form.username.data, email=form.email.data, password=hashed_password)
+                user = User(first_name=form.username.data, other_names=form.other_name.data, last_name=form.last_name.data, username=form.username.data, email=form.email.data, phone_number=form.phone_number.data, password=hashed_password)
                 db.session.add(user)
                 db.session.commit()
                 flash('Your account has been created! You can now log in', 'success')
