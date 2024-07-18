@@ -50,6 +50,8 @@ Advanced features like route planning and navigation
 
 Contributors
 Jesse Jackson Sefa Manu jessejackson.055@gmail.com
+linkdin - https://www.linkedin.com/in/jesse-jackson
+phone number - 0558692545
 
 License
 This project is licensed under the MIT License.
